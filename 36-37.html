@@ -1,0 +1,1461 @@
+﻿
+<SCRIPT language=JavaScript>
+	var message = "Don't right click, Please"; 
+	function rtclickcheck(keyp){ if (navigator.appName == "Netscape" && keyp.which == 3){ 	alert(message); return false; } 
+	if (navigator.appVersion.indexOf("MSIE") != -1 && event.button == 2) { 	alert(message); 	return false; } } 
+	document.onmousedown = rtclickcheck;
+
+</SCRIPT>
+
+<SCRIPT language=JavaScript>
+</SCRIPT>
+<script language="javascript">window.onload = function(){var element = document.getElementById('mod-quiz-attempt');element.style.background ="#414141 url('images/default.jpg') no-repeat center top fixed";}</script><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr" lang="en" xml:lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="http://exam.fus.edu.vn/theme/standard/styles.php" />
+<link rel="stylesheet" type="text/css" href="http://exam.fus.edu.vn/theme/student-experience/styles.php" />
+
+<!--[if IE 7]>
+    <link rel="stylesheet" type="text/css" href="http://exam.fus.edu.vn/theme/standard/styles_ie7.css" />
+<![endif]-->
+<!--[if IE 6]>
+    <link rel="stylesheet" type="text/css" href="http://exam.fus.edu.vn/theme/standard/styles_ie6.css" />
+<![endif]-->
+
+<script type="text/javascript"  src="http://exam.fus.edu.vn/mod/quiz/quiz.js"></script>
+
+    <meta name="keywords" content="moodle, XML: Kỳ thi: Retake Exam - Ngày thi: 05.09.2013 " />
+    <title>XML: Kỳ thi: Retake Exam - Ngày thi: 05.09.2013</title>
+    <link rel="shortcut icon" href="http://exam.fus.edu.vn/theme/student-experience/favicon.ico" />
+    <!--<style type="text/css">/*<![CDATA[*/ body{behavior:url(http://exam.fus.edu.vn/lib/csshover.htc);} /*]]>*/</style>-->
+
+<script type="text/javascript" src="http://exam.fus.edu.vn/lib/javascript-static.js"></script>
+<script type="text/javascript" src="http://exam.fus.edu.vn/lib/javascript-mod.php"></script>
+<script type="text/javascript" src="http://exam.fus.edu.vn/lib/overlib/overlib.js"></script>
+<script type="text/javascript" src="http://exam.fus.edu.vn/lib/overlib/overlib_cssstyle.js"></script>
+<script type="text/javascript" src="http://exam.fus.edu.vn/lib/cookies.js"></script>
+<script type="text/javascript" src="http://exam.fus.edu.vn/lib/ufo.js"></script>
+<script type="text/javascript" src="http://exam.fus.edu.vn/lib/dropdown.js"></script>  
+
+<script type="text/javascript" defer="defer">
+//<![CDATA[
+setTimeout('fix_column_widths()', 20);
+//]]>
+</script>
+<script type="text/javascript">
+//<![CDATA[
+function openpopup(url,name,options,fullscreen) {
+  fullurl = "http://exam.fus.edu.vn" + url;
+  windowobj = window.open(fullurl,name,options);
+  if (fullscreen) {
+     windowobj.moveTo(0,0);
+     windowobj.resizeTo(screen.availWidth,screen.availHeight);
+  }
+  windowobj.focus();
+  return false;
+}
+
+function uncheckall() {
+  void(d=document);
+  void(el=d.getElementsByTagName('INPUT'));
+  for(i=0;i<el.length;i++) {
+    void(el[i].checked=0);
+  }
+}
+
+function checkall() {
+  void(d=document);
+  void(el=d.getElementsByTagName('INPUT'));
+  for(i=0;i<el.length;i++) {
+    void(el[i].checked=1);
+  }
+}
+
+function inserttext(text) {
+  text = ' ' + text + ' ';
+  if ( opener.document.forms['theform'].message.createTextRange && opener.document.forms['theform'].message.caretPos) {
+    var caretPos = opener.document.forms['theform'].message.caretPos;
+    caretPos.text = caretPos.text.charAt(caretPos.text.length - 1) == ' ' ? text + ' ' : text;
+  } else {
+    opener.document.forms['theform'].message.value  += text;
+  }
+  opener.document.forms['theform'].message.focus();
+}
+
+function getElementsByClassName(oElm, strTagName, oClassNames){
+	var arrElements = (strTagName == "*" && oElm.all)? oElm.all : oElm.getElementsByTagName(strTagName);
+	var arrReturnElements = new Array();
+	var arrRegExpClassNames = new Array();
+	if(typeof oClassNames == "object"){
+		for(var i=0; i<oClassNames.length; i++){
+			arrRegExpClassNames.push(new RegExp("(^|\\s)" + oClassNames[i].replace(/\-/g, "\\-") + "(\\s|$)"));
+		}
+	}
+	else{
+		arrRegExpClassNames.push(new RegExp("(^|\\s)" + oClassNames.replace(/\-/g, "\\-") + "(\\s|$)"));
+	}
+	var oElement;
+	var bMatchesAll;
+	for(var j=0; j<arrElements.length; j++){
+		oElement = arrElements[j];
+		bMatchesAll = true;
+		for(var k=0; k<arrRegExpClassNames.length; k++){
+			if(!arrRegExpClassNames[k].test(oElement.className)){
+				bMatchesAll = false;
+				break;
+			}
+		}
+		if(bMatchesAll){
+			arrReturnElements.push(oElement);
+		}
+	}
+	return (arrReturnElements)
+}
+//]]>
+</script>
+<center>**</center><center>**</center></head>
+
+<body  class="mod-quiz course-88 dir-ltr lang-en_utf8" id="mod-quiz-attempt">
+
+<div fix="return false;" id="page">
+
+    <div id="header" class=" clearfix">       <h1 class="headermain">FU-HCM &raquo; XML </h1>
+    </div>    <div id="banner"></div>
+    <div class="navbar clearfix">
+        <div class="breadcrumb"><h2 class="accesshide " >You are here</h2> <ul>
+<li class="first"><a onclick="this.target='_top'" href="http://exam.fus.edu.vn/">FU-HCM</a></li><li class="first"> <span class="accesshide " >/&nbsp;</span><span class="arrow sep">&raquo;</span> <a onclick="this.target='_top'" href="http://exam.fus.edu.vn/course/view.php?id=88">XML</a></li><li class="first"> <span class="accesshide " >/&nbsp;</span><span class="arrow sep">&raquo;</span> <a onclick="this.target='_top'" href="http://exam.fus.edu.vn/mod/quiz/index.php?id=88">Quizzes</a></li><li class="first"> <span class="accesshide " >/&nbsp;</span><span class="arrow sep">&raquo;</span> <a onclick="this.target='_top'" href="http://exam.fus.edu.vn/mod/quiz/view.php?id=15195">Kỳ thi: Retake Exam - Ngày thi: 05.09.2013</a></li><li class="first"> <span class="accesshide " >/&nbsp;</span><span class="arrow sep">&raquo;</span> Attempt 1</li></ul></div>
+        <div class="navbutton">&nbsp;</div>
+    </div>
+    <!-- END OF HEADER -->
+    <div id="content"><div id="overDiv" style="position:absolute; visibility:hidden; z-index:1000;"></div><h2   class="main">Kỳ thi: Retake Exam - Ngày thi: 05.09.2013</h2><form id="responseform" method="post" action="attempt.php?q=11933&amp;page=1" enctype="multipart/form-data" onclick="this.autocomplete='off'" onkeypress="return check_enter(event);">
+        <script type="text/javascript">
+            // Do nothing, but you have to have a script tag before a noscript tag.
+        </script>
+        <noscript>
+        <div>
+        <h2   class="main">JavaScript must be enabled to continue!</h2>        </div>
+        </noscript>
+        <div><div class="paging pagingbar"><span class="title">Page:</span>&nbsp;&nbsp;<a href="javascript:navigate(0);" title="Previous">(Previous)</a>&nbsp;&nbsp;<a href="javascript:navigate(0);">1</a>&nbsp;&nbsp;<span class="thispage">2</span>&nbsp;</div><div fix="return false";id="q137156" class="que multichoice clearfix">
+  <div class="info ms_text">
+    <span class="no"><span class="accesshide">Question </span>31</span>
+          <div class="grade">
+        Marks: 1      </div>
+      </div>
+  <div class="content">
+    <div class="qtext c1_text">
+  <span lang="EN">
+<p>What are the Data Island referred to?</p></span></div>
+
+
+<div class="ablock clearfix ms_text">
+  <div class="prompt c1_text">
+    Choose one answer.  </div>
+
+  <table class="answer">
+          <tr class="r0">
+        <td class="c0 control">
+          <input  id="resp137156_409906" name="resp137156_" checked="checked" type="radio" value="409906" />        </td>
+        <td class="c1 text  c1_text">
+          <label for="resp137156_409906">
+            <span class="anun">a<span class="anumsep">.</span></span> Data Source Objects                      </label>
+        </td>
+        <td class="c0 feedback">
+                  </td>
+      </tr>
+          <tr class="r1">
+        <td class="c0 control">
+          <input  id="resp137156_409904" name="resp137156_"  type="radio" value="409904" />        </td>
+        <td class="c1 text  c1_text">
+          <label for="resp137156_409904">
+            <span class="anun">b<span class="anumsep">.</span></span> Data Packets                      </label>
+        </td>
+        <td class="c0 feedback">
+                  </td>
+      </tr>
+          <tr class="r0">
+        <td class="c0 control">
+          <input  id="resp137156_409907" name="resp137156_"  type="radio" value="409907" />        </td>
+        <td class="c1 text  c1_text">
+          <label for="resp137156_409907">
+            <span class="anun">c<span class="anumsep">.</span></span> None of the others                      </label>
+        </td>
+        <td class="c0 feedback">
+                  </td>
+      </tr>
+          <tr class="r1">
+        <td class="c0 control">
+          <input  id="resp137156_409905" name="resp137156_"  type="radio" value="409905" />        </td>
+        <td class="c1 text  c1_text">
+          <label for="resp137156_409905">
+            <span class="anun">d<span class="anumsep">.</span></span> Data Type Definition                      </label>
+        </td>
+        <td class="c0 feedback">
+                  </td>
+      </tr>
+      </table>
+    </div>
+    <div class="grading">
+          </div>  </div>
+</div>
+<div fix="return false";id="q90920" class="que multichoice clearfix">
+  <div class="info ms_text">
+    <span class="no"><span class="accesshide">Question </span>32</span>
+          <div class="grade">
+        Marks: 1      </div>
+      </div>
+  <div class="content">
+    <div class="qtext c1_text">
+  What would the browser display if the following script was executed and the user entered 5 at both prompts?<br />1 &lt;SCRIPT LANGUAGE = &quot;JavaScript&quot;&gt;<br />2 var firstNumber = window.prompt(&quot;Enter an integer&quot;, 0);<br />3 var secondNumber = window.prompt(&quot;Enter an integer&quot;,0);<br />4 var thirdNumber;<br />5 thirdNumber = firstNumber + secondNumber;<br />6 document.write( thirdNumber );<br />7 &lt;/SCRIPT&gt;</div>
+
+
+<div class="ablock clearfix ms_text">
+  <div class="prompt c1_text">
+    Choose one answer.  </div>
+
+  <table class="answer">
+          <tr class="r0">
+        <td class="c0 control">
+          <input  id="resp90920_268784" name="resp90920_" checked="checked" type="radio" value="268784" />        </td>
+        <td class="c1 text  c1_text">
+          <label for="resp90920_268784">
+            <span class="anun">a<span class="anumsep">.</span></span> 55                      </label>
+        </td>
+        <td class="c0 feedback">
+                  </td>
+      </tr>
+          <tr class="r1">
+        <td class="c0 control">
+          <input  id="resp90920_268785" name="resp90920_"  type="radio" value="268785" />        </td>
+        <td class="c1 text  c1_text">
+          <label for="resp90920_268785">
+            <span class="anun">b<span class="anumsep">.</span></span> 0                      </label>
+        </td>
+        <td class="c0 feedback">
+                  </td>
+      </tr>
+          <tr class="r0">
+        <td class="c0 control">
+          <input  id="resp90920_268786" name="resp90920_"  type="radio" value="268786" />        </td>
+        <td class="c1 text  c1_text">
+          <label for="resp90920_268786">
+            <span class="anun">c<span class="anumsep">.</span></span> 10                      </label>
+        </td>
+        <td class="c0 feedback">
+                  </td>
+      </tr>
+          <tr class="r1">
+        <td class="c0 control">
+          <input  id="resp90920_268787" name="resp90920_"  type="radio" value="268787" />        </td>
+        <td class="c1 text  c1_text">
+          <label for="resp90920_268787">
+            <span class="anun">d<span class="anumsep">.</span></span> nothing                      </label>
+        </td>
+        <td class="c0 feedback">
+                  </td>
+      </tr>
+      </table>
+    </div>
+    <div class="grading">
+          </div>  </div>
+</div>
+<div fix="return false";id="q137172" class="que multichoice clearfix">
+  <div class="info ms_text">
+    <span class="no"><span class="accesshide">Question </span>33</span>
+          <div class="grade">
+        Marks: 1      </div>
+      </div>
+  <div class="content">
+    <div class="qtext c1_text">
+  <span lang="EN">
+<p>Which of the following selections does not follow the rules of operator precedence? Assume that the operators on the left are evaluated first.</p></span></div>
+
+
+<div class="ablock clearfix ms_text">
+  <div class="prompt c1_text">
+    Choose one answer.  </div>
+
+  <table class="answer">
+          <tr class="r0">
+        <td class="c0 control">
+          <input  id="resp137172_409971" name="resp137172_"  type="radio" value="409971" />        </td>
+        <td class="c1 text  c1_text">
+          <label for="resp137172_409971">
+            <span class="anun">a<span class="anumsep">.</span></span> None of the others                      </label>
+        </td>
+        <td class="c0 feedback">
+                  </td>
+      </tr>
+          <tr class="r1">
+        <td class="c0 control">
+          <input  id="resp137172_409968" name="resp137172_"  type="radio" value="409968" />        </td>
+        <td class="c1 text  c1_text">
+          <label for="resp137172_409968">
+            <span class="anun">b<span class="anumsep">.</span></span> multiplication, division, addition                      </label>
+        </td>
+        <td class="c0 feedback">
+                  </td>
+      </tr>
+          <tr class="r0">
+        <td class="c0 control">
+          <input  id="resp137172_409970" name="resp137172_"  type="radio" value="409970" />        </td>
+        <td class="c1 text  c1_text">
+          <label for="resp137172_409970">
+            <span class="anun">c<span class="anumsep">.</span></span> division, multiplication, addition                      </label>
+        </td>
+        <td class="c0 feedback">
+                  </td>
+      </tr>
+          <tr class="r1">
+        <td class="c0 control">
+          <input  id="resp137172_409969" name="resp137172_" checked="checked" type="radio" value="409969" />        </td>
+        <td class="c1 text  c1_text">
+          <label for="resp137172_409969">
+            <span class="anun">d<span class="anumsep">.</span></span> parentheses, subtraction, modulus                      </label>
+        </td>
+        <td class="c0 feedback">
+                  </td>
+      </tr>
+      </table>
+    </div>
+    <div class="grading">
+          </div>  </div>
+</div>
+<div fix="return false";id="q173469" class="que multichoice clearfix">
+  <div class="info ms_text">
+    <span class="no"><span class="accesshide">Question </span>34</span>
+          <div class="grade">
+        Marks: 1      </div>
+      </div>
+  <div class="content">
+    <div class="qtext c1_text">
+  <span lang="EN">
+<p>Which parameters can be used in @javax.xml.bind.annotation.XMLSchema?</p></span></div>
+
+
+<div class="ablock clearfix ms_text">
+  <div class="prompt c1_text">
+    Choose one answer.  </div>
+
+  <table class="answer">
+          <tr class="r0">
+        <td class="c0 control">
+          <input  id="resp173469_511707" name="resp173469_"  type="radio" value="511707" />        </td>
+        <td class="c1 text  c1_text">
+          <label for="resp173469_511707">
+            <span class="anun">a<span class="anumsep">.</span></span> none of the others                      </label>
+        </td>
+        <td class="c0 feedback">
+                  </td>
+      </tr>
+          <tr class="r1">
+        <td class="c0 control">
+          <input  id="resp173469_511706" name="resp173469_"  type="radio" value="511706" />        </td>
+        <td class="c1 text  c1_text">
+          <label for="resp173469_511706">
+            <span class="anun">b<span class="anumsep">.</span></span> elementFormDefault, namespace, xmlFilePath                      </label>
+        </td>
+        <td class="c0 feedback">
+                  </td>
+      </tr>
+          <tr class="r0">
+        <td class="c0 control">
+          <input  id="resp173469_511704" name="resp173469_"  type="radio" value="511704" />        </td>
+        <td class="c1 text  c1_text">
+          <label for="resp173469_511704">
+            <span class="anun">c<span class="anumsep">.</span></span> elementFormDefault, namespace, xmlns                      </label>
+        </td>
+        <td class="c0 feedback">
+                  </td>
+      </tr>
+          <tr class="r1">
+        <td class="c0 control">
+          <input  id="resp173469_511705" name="resp173469_" checked="checked" type="radio" value="511705" />        </td>
+        <td class="c1 text  c1_text">
+          <label for="resp173469_511705">
+            <span class="anun">d<span class="anumsep">.</span></span> packageName, namespace, xmlns                      </label>
+        </td>
+        <td class="c0 feedback">
+                  </td>
+      </tr>
+      </table>
+    </div>
+    <div class="grading">
+          </div>  </div>
+</div>
+<div fix="return false";id="q173468" class="que multichoice clearfix">
+  <div class="info ms_text">
+    <span class="no"><span class="accesshide">Question </span>35</span>
+          <div class="grade">
+        Marks: 1      </div>
+      </div>
+  <div class="content">
+    <div class="qtext c1_text">
+  <span lang="EN">
+<p>Which data type does the getElementsByTagName() method return?</p></span></div>
+
+
+<div class="ablock clearfix ms_text">
+  <div class="prompt c1_text">
+    Choose one answer.  </div>
+
+  <table class="answer">
+          <tr class="r0">
+        <td class="c0 control">
+          <input  id="resp173468_511700" name="resp173468_"  type="radio" value="511700" />        </td>
+        <td class="c1 text  c1_text">
+          <label for="resp173468_511700">
+            <span class="anun">a<span class="anumsep">.</span></span> Element                      </label>
+        </td>
+        <td class="c0 feedback">
+                  </td>
+      </tr>
+          <tr class="r1">
+        <td class="c0 control">
+          <input  id="resp173468_511702" name="resp173468_" checked="checked" type="radio" value="511702" />        </td>
+        <td class="c1 text  c1_text">
+          <label for="resp173468_511702">
+            <span class="anun">b<span class="anumsep">.</span></span> NodeList                        </label>
+        </td>
+        <td class="c0 feedback">
+                  </td>
+      </tr>
+          <tr class="r0">
+        <td class="c0 control">
+          <input  id="resp173468_511703" name="resp173468_"  type="radio" value="511703" />        </td>
+        <td class="c1 text  c1_text">
+          <label for="resp173468_511703">
+            <span class="anun">c<span class="anumsep">.</span></span> None of the others                      </label>
+        </td>
+        <td class="c0 feedback">
+                  </td>
+      </tr>
+          <tr class="r1">
+        <td class="c0 control">
+          <input  id="resp173468_511701" name="resp173468_"  type="radio" value="511701" />        </td>
+        <td class="c1 text  c1_text">
+          <label for="resp173468_511701">
+            <span class="anun">d<span class="anumsep">.</span></span> Node                        </label>
+        </td>
+        <td class="c0 feedback">
+                  </td>
+      </tr>
+      </table>
+    </div>
+    <div class="grading">
+          </div>  </div>
+</div>
+<div fix="return false";id="q173472" class="que multichoice clearfix">
+  <div class="info ms_text">
+    <span class="no"><span class="accesshide">Question </span>36</span>
+          <div class="grade">
+        Marks: 1      </div>
+      </div>
+  <div class="content">
+    <div class="qtext c1_text">
+  <span lang="EN">
+<p>The \n,\t, \r escape sequences do not affect HTML rendering unless they are used between which tags?</p></span></div>
+
+
+<div class="ablock clearfix ms_text">
+  <div class="prompt c1_text">
+    Choose one answer.  </div>
+
+  <table class="answer">
+          <tr class="r0">
+        <td class="c0 control">
+          <input  id="resp173472_511716" name="resp173472_"  type="radio" value="511716" />        </td>
+        <td class="c1 text  c1_text">
+          <label for="resp173472_511716">
+            <span class="anun">a<span class="anumsep">.</span></span> select                      </label>
+        </td>
+        <td class="c0 feedback">
+                  </td>
+      </tr>
+          <tr class="r1">
+        <td class="c0 control">
+          <input  id="resp173472_511719" name="resp173472_"  type="radio" value="511719" />        </td>
+        <td class="c1 text  c1_text">
+          <label for="resp173472_511719">
+            <span class="anun">b<span class="anumsep">.</span></span> none of the others                      </label>
+        </td>
+        <td class="c0 feedback">
+                  </td>
+      </tr>
+          <tr class="r0">
+        <td class="c0 control">
+          <input  id="resp173472_511717" name="resp173472_" checked="checked" type="radio" value="511717" />        </td>
+        <td class="c1 text  c1_text">
+          <label for="resp173472_511717">
+            <span class="anun">c<span class="anumsep">.</span></span> pre                      </label>
+        </td>
+        <td class="c0 feedback">
+                  </td>
+      </tr>
+          <tr class="r1">
+        <td class="c0 control">
+          <input  id="resp173472_511718" name="resp173472_"  type="radio" value="511718" />        </td>
+        <td class="c1 text  c1_text">
+          <label for="resp173472_511718">
+            <span class="anun">d<span class="anumsep">.</span></span> a                      </label>
+        </td>
+        <td class="c0 feedback">
+                  </td>
+      </tr>
+      </table>
+    </div>
+    <div class="grading">
+          </div>  </div>
+</div>
+<div fix="return false";id="q173470" class="que multichoice clearfix">
+  <div class="info ms_text">
+    <span class="no"><span class="accesshide">Question </span>37</span>
+          <div class="grade">
+        Marks: 1      </div>
+      </div>
+  <div class="content">
+    <div class="qtext c1_text">
+  <span lang="EN">
+<p>A developer is using the SAX parser to extract the value of an element in an XML document. Which method should be used?</p></span></div>
+
+
+<div class="ablock clearfix ms_text">
+  <div class="prompt c1_text">
+    Choose one answer.  </div>
+
+  <table class="answer">
+          <tr class="r0">
+        <td class="c0 control">
+          <input  id="resp173470_511708" name="resp173470_" checked="checked" type="radio" value="511708" />        </td>
+        <td class="c1 text  c1_text">
+          <label for="resp173470_511708">
+            <span class="anun">a<span class="anumsep">.</span></span> startPrefixMapping                      </label>
+        </td>
+        <td class="c0 feedback">
+                  </td>
+      </tr>
+          <tr class="r1">
+        <td class="c0 control">
+          <input  id="resp173470_511710" name="resp173470_"  type="radio" value="511710" />        </td>
+        <td class="c1 text  c1_text">
+          <label for="resp173470_511710">
+            <span class="anun">b<span class="anumsep">.</span></span> characters                      </label>
+        </td>
+        <td class="c0 feedback">
+                  </td>
+      </tr>
+          <tr class="r0">
+        <td class="c0 control">
+          <input  id="resp173470_511711" name="resp173470_"  type="radio" value="511711" />        </td>
+        <td class="c1 text  c1_text">
+          <label for="resp173470_511711">
+            <span class="anun">c<span class="anumsep">.</span></span> none of the others                      </label>
+        </td>
+        <td class="c0 feedback">
+                  </td>
+      </tr>
+          <tr class="r1">
+        <td class="c0 control">
+          <input  id="resp173470_511709" name="resp173470_"  type="radio" value="511709" />        </td>
+        <td class="c1 text  c1_text">
+          <label for="resp173470_511709">
+            <span class="anun">d<span class="anumsep">.</span></span> endDocument                      </label>
+        </td>
+        <td class="c0 feedback">
+                  </td>
+      </tr>
+      </table>
+    </div>
+    <div class="grading">
+          </div>  </div>
+</div>
+<div fix="return false";id="q90908" class="que multichoice clearfix">
+  <div class="info ms_text">
+    <span class="no"><span class="accesshide">Question </span>38</span>
+          <div class="grade">
+        Marks: 1      </div>
+      </div>
+  <div class="content">
+    <div class="qtext c1_text">
+  Which of the following is declared correctly and will not result in an error assuming x = 2 and y = 30?</div>
+
+
+<div class="ablock clearfix ms_text">
+  <div class="prompt c1_text">
+    Choose one answer.  </div>
+
+  <table class="answer">
+          <tr class="r0">
+        <td class="c0 control">
+          <input  id="resp90908_268740" name="resp90908_"  type="radio" value="268740" />        </td>
+        <td class="c1 text  c1_text">
+          <label for="resp90908_268740">
+            <span class="anun">a<span class="anumsep">.</span></span> for ( var j = x, j <= 80 * y; j -= 5 )                      </label>
+        </td>
+        <td class="c0 feedback">
+                  </td>
+      </tr>
+          <tr class="r1">
+        <td class="c0 control">
+          <input  id="resp90908_268737" name="resp90908_" checked="checked" type="radio" value="268737" />        </td>
+        <td class="c1 text  c1_text">
+          <label for="resp90908_268737">
+            <span class="anun">b<span class="anumsep">.</span></span> for ( var j = x; j <= 80 * y; j += 5 / x )                      </label>
+        </td>
+        <td class="c0 feedback">
+                  </td>
+      </tr>
+          <tr class="r0">
+        <td class="c0 control">
+          <input  id="resp90908_268738" name="resp90908_"  type="radio" value="268738" />        </td>
+        <td class="c1 text  c1_text">
+          <label for="resp90908_268738">
+            <span class="anun">c<span class="anumsep">.</span></span> for ( var j = 10; j <= 80; j-- )                      </label>
+        </td>
+        <td class="c0 feedback">
+                  </td>
+      </tr>
+          <tr class="r1">
+        <td class="c0 control">
+          <input  id="resp90908_268739" name="resp90908_"  type="radio" value="268739" />        </td>
+        <td class="c1 text  c1_text">
+          <label for="resp90908_268739">
+            <span class="anun">d<span class="anumsep">.</span></span> for ( var j = x, j <= y, j += 5 )                      </label>
+        </td>
+        <td class="c0 feedback">
+                  </td>
+      </tr>
+      </table>
+    </div>
+    <div class="grading">
+          </div>  </div>
+</div>
+<div fix="return false";id="q90915" class="que multichoice clearfix">
+  <div class="info ms_text">
+    <span class="no"><span class="accesshide">Question </span>39</span>
+          <div class="grade">
+        Marks: 1      </div>
+      </div>
+  <div class="content">
+    <div class="qtext c1_text">
+  Given:<br />1. &lt;?xml version=&quot;1.0&quot;?&gt;<br />2. &lt;note date=”12/11/99”&gt;<br />3. &lt;to&gt;Ravi&lt;/to&gt;<br />4. &lt;from&gt;Amit&lt;/from&gt;<br />5. &lt;heading&gt;Final Exam&lt;/Heading&gt;<br />6. &lt;body&gt;Try yourself&lt;/body&gt;<br />7. &lt;/note&gt;<br />Choose the correct statement</div>
+
+
+<div class="ablock clearfix ms_text">
+  <div class="prompt c1_text">
+    Choose one answer.  </div>
+
+  <table class="answer">
+          <tr class="r0">
+        <td class="c0 control">
+          <input  id="resp90915_268766" name="resp90915_"  type="radio" value="268766" />        </td>
+        <td class="c1 text  c1_text">
+          <label for="resp90915_268766">
+            <span class="anun">a<span class="anumsep">.</span></span> The document is well-formed                      </label>
+        </td>
+        <td class="c0 feedback">
+                  </td>
+      </tr>
+          <tr class="r1">
+        <td class="c0 control">
+          <input  id="resp90915_268765" name="resp90915_"  type="radio" value="268765" />        </td>
+        <td class="c1 text  c1_text">
+          <label for="resp90915_268765">
+            <span class="anun">b<span class="anumsep">.</span></span> Line 6 contains error                      </label>
+        </td>
+        <td class="c0 feedback">
+                  </td>
+      </tr>
+          <tr class="r0">
+        <td class="c0 control">
+          <input  id="resp90915_268767" name="resp90915_"  type="radio" value="268767" />        </td>
+        <td class="c1 text  c1_text">
+          <label for="resp90915_268767">
+            <span class="anun">c<span class="anumsep">.</span></span> The document is valid                      </label>
+        </td>
+        <td class="c0 feedback">
+                  </td>
+      </tr>
+          <tr class="r1">
+        <td class="c0 control">
+          <input  id="resp90915_268764" name="resp90915_" checked="checked" type="radio" value="268764" />        </td>
+        <td class="c1 text  c1_text">
+          <label for="resp90915_268764">
+            <span class="anun">d<span class="anumsep">.</span></span> Line 2 contains the error                      </label>
+        </td>
+        <td class="c0 feedback">
+                  </td>
+      </tr>
+      </table>
+    </div>
+    <div class="grading">
+          </div>  </div>
+</div>
+<div fix="return false";id="q173466" class="que multichoice clearfix">
+  <div class="info ms_text">
+    <span class="no"><span class="accesshide">Question </span>40</span>
+          <div class="grade">
+        Marks: 1      </div>
+      </div>
+  <div class="content">
+    <div class="qtext c1_text">
+  <span lang="EN">
+<p>Given:</p>
+<p>5. File f = new File(&quot;stylesheet.xsl&quot;)</p>
+<p>6. FileInputStream fis = new FileInputStream(f);</p>
+<p>7. StreamSource src = new StreamSource(fis);</p>
+<p>8. TransformerFactory tf = TransformerFactory.newInstance();</p>
+<p>9. // insert code here</p>
+<p>Which code fragment, inserted at line 9, enables the reuse of stylesheet.xsl to improve performance?</p></span></div>
+
+
+<div class="ablock clearfix ms_text">
+  <div class="prompt c1_text">
+    Choose one answer.  </div>
+
+  <table class="answer">
+          <tr class="r0">
+        <td class="c0 control">
+          <input  id="resp173466_511694" name="resp173466_" checked="checked" type="radio" value="511694" />        </td>
+        <td class="c1 text  c1_text">
+          <label for="resp173466_511694">
+            <span class="anun">a<span class="anumsep">.</span></span> Templates templates = tf.newTemplates(fis);                      </label>
+        </td>
+        <td class="c0 feedback">
+                  </td>
+      </tr>
+          <tr class="r1">
+        <td class="c0 control">
+          <input  id="resp173466_511693" name="resp173466_"  type="radio" value="511693" />        </td>
+        <td class="c1 text  c1_text">
+          <label for="resp173466_511693">
+            <span class="anun">b<span class="anumsep">.</span></span> Templates templates = tf.newTemplates(src);                      </label>
+        </td>
+        <td class="c0 feedback">
+                  </td>
+      </tr>
+          <tr class="r0">
+        <td class="c0 control">
+          <input  id="resp173466_511695" name="resp173466_"  type="radio" value="511695" />        </td>
+        <td class="c1 text  c1_text">
+          <label for="resp173466_511695">
+            <span class="anun">c<span class="anumsep">.</span></span> None of the others                      </label>
+        </td>
+        <td class="c0 feedback">
+                  </td>
+      </tr>
+          <tr class="r1">
+        <td class="c0 control">
+          <input  id="resp173466_511692" name="resp173466_"  type="radio" value="511692" />        </td>
+        <td class="c1 text  c1_text">
+          <label for="resp173466_511692">
+            <span class="anun">d<span class="anumsep">.</span></span> Transformer transformer = tf.newTransformer(src);                      </label>
+        </td>
+        <td class="c0 feedback">
+                  </td>
+      </tr>
+      </table>
+    </div>
+    <div class="grading">
+          </div>  </div>
+</div>
+<div fix="return false";id="q137160" class="que multichoice clearfix">
+  <div class="info ms_text">
+    <span class="no"><span class="accesshide">Question </span>41</span>
+          <div class="grade">
+        Marks: 1      </div>
+      </div>
+  <div class="content">
+    <div class="qtext c1_text">
+  <span lang="EN">
+<p>Which of the following statement is the XML Schema correct?</p></span></div>
+
+
+<div class="ablock clearfix ms_text">
+  <div class="prompt c1_text">
+    Choose one answer.  </div>
+
+  <table class="answer">
+          <tr class="r0">
+        <td class="c0 control">
+          <input  id="resp137160_409923" name="resp137160_"  type="radio" value="409923" />        </td>
+        <td class="c1 text  c1_text">
+          <label for="resp137160_409923">
+            <span class="anun">a<span class="anumsep">.</span></span> All of the others                      </label>
+        </td>
+        <td class="c0 feedback">
+                  </td>
+      </tr>
+          <tr class="r1">
+        <td class="c0 control">
+          <input  id="resp137160_409922" name="resp137160_"  type="radio" value="409922" />        </td>
+        <td class="c1 text  c1_text">
+          <label for="resp137160_409922">
+            <span class="anun">b<span class="anumsep">.</span></span> XML schema documents require the learning of cryptic languages like EBNF.                      </label>
+        </td>
+        <td class="c0 feedback">
+                  </td>
+      </tr>
+          <tr class="r0">
+        <td class="c0 control">
+          <input  id="resp137160_409920" name="resp137160_" checked="checked" type="radio" value="409920" />        </td>
+        <td class="c1 text  c1_text">
+          <label for="resp137160_409920">
+            <span class="anun">c<span class="anumsep">.</span></span> XML Schema supports richer data types                      </label>
+        </td>
+        <td class="c0 feedback">
+                  </td>
+      </tr>
+          <tr class="r1">
+        <td class="c0 control">
+          <input  id="resp137160_409921" name="resp137160_"  type="radio" value="409921" />        </td>
+        <td class="c1 text  c1_text">
+          <label for="resp137160_409921">
+            <span class="anun">d<span class="anumsep">.</span></span> String is a data type supported by schema. The only disadvantage in a string data type is that it cannot have any combination of Unicode characters.                      </label>
+        </td>
+        <td class="c0 feedback">
+                  </td>
+      </tr>
+      </table>
+    </div>
+    <div class="grading">
+          </div>  </div>
+</div>
+<div fix="return false";id="q90926" class="que multichoice clearfix">
+  <div class="info ms_text">
+    <span class="no"><span class="accesshide">Question </span>42</span>
+          <div class="grade">
+        Marks: 1      </div>
+      </div>
+  <div class="content">
+    <div class="qtext c1_text">
+  Given<br />&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;<br />&lt;xsd:schema targetNamespace=&quot;<a href="http://xml.netbeans.org/schema/mail">http://xml.netbeans.org/schema/mail</a>&quot;<br /> xmlns=&quot;<a href="http://xml.netbeans.org/schema/mail">http://xml.netbeans.org/schema/mail</a>&quot;<br /> elementFormDefault=&quot;qualified&quot;&gt;<br /> &lt;xsd:element name=&quot;mail&quot;&gt;<br /> &lt;xsd:complexType&gt;<br /> &lt;xsd:sequence&gt;<br /> &lt;xsd:element name=&quot;to&quot; type=&quot;xsd:language&quot; /&gt;<br /> &lt;xsd:element name=&quot;from&quot; type=&quot;xsd:token&quot;/&gt;<br /> &lt;xsd:element name=&quot;header&quot; type=&quot;xsd:string&quot;/&gt;<br /> &lt;xsd:element name=&quot;body&quot; type=&quot;xsd:normalizedString&quot;/&gt;<br /> &lt;/xsd:sequence&gt;<br /> &lt;/xsd:complexType&gt;<br /> &lt;/xsd:element&gt;<br />&lt;/xsd:schema&gt;<br />Select the incorrect statement</div>
+
+
+<div class="ablock clearfix ms_text">
+  <div class="prompt c1_text">
+    Choose one answer.  </div>
+
+  <table class="answer">
+          <tr class="r0">
+        <td class="c0 control">
+          <input  id="resp90926_268810" name="resp90926_"  type="radio" value="268810" />        </td>
+        <td class="c1 text  c1_text">
+          <label for="resp90926_268810">
+            <span class="anun">a<span class="anumsep">.</span></span> All of the others                      </label>
+        </td>
+        <td class="c0 feedback">
+                  </td>
+      </tr>
+          <tr class="r1">
+        <td class="c0 control">
+          <input  id="resp90926_268807" name="resp90926_"  type="radio" value="268807" />        </td>
+        <td class="c1 text  c1_text">
+          <label for="resp90926_268807">
+            <span class="anun">b<span class="anumsep">.</span></span> The XML Schema is valid                      </label>
+        </td>
+        <td class="c0 feedback">
+                  </td>
+      </tr>
+          <tr class="r0">
+        <td class="c0 control">
+          <input  id="resp90926_268808" name="resp90926_" checked="checked" type="radio" value="268808" />        </td>
+        <td class="c1 text  c1_text">
+          <label for="resp90926_268808">
+            <span class="anun">c<span class="anumsep">.</span></span> The XML Schema is not valid because the xsd:sequence must be enclosed xsd:completeType                      </label>
+        </td>
+        <td class="c0 feedback">
+                  </td>
+      </tr>
+          <tr class="r1">
+        <td class="c0 control">
+          <input  id="resp90926_268809" name="resp90926_"  type="radio" value="268809" />        </td>
+        <td class="c1 text  c1_text">
+          <label for="resp90926_268809">
+            <span class="anun">d<span class="anumsep">.</span></span> The XML Schema is not valid because the xsd:normalizedString can be not resolved                      </label>
+        </td>
+        <td class="c0 feedback">
+                  </td>
+      </tr>
+      </table>
+    </div>
+    <div class="grading">
+          </div>  </div>
+</div>
+<div fix="return false";id="q90925" class="que multichoice clearfix">
+  <div class="info ms_text">
+    <span class="no"><span class="accesshide">Question </span>43</span>
+          <div class="grade">
+        Marks: 1      </div>
+      </div>
+  <div class="content">
+    <div class="qtext c1_text">
+  Given:<br />&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;<br />&lt;!DOCTYPE library[<br />&lt;!ELEMENT library (book)?&gt;<br />&lt;!ELEMENT book (booktitle, author, price)&gt;<br />&lt;!ELEMENT booktitle (#PCDATA)&gt;<br />&lt;!ELEMENT author (#PCDATA) #REQUIRED&gt;<br />&lt;!ELEMENT price (#PCDATA)&gt;<br />]&gt;<br />&lt;library&gt;<br /> &lt;book&gt;<br /> &lt;booktitle&gt;The Firm&lt;/booktitle&gt;<br /> &lt;author&gt;John Grisham&lt;/author&gt;<br /> &lt;price&gt;99&lt;/price&gt;<br /> &lt;/book&gt;<br /> &lt;book&gt;<br /> &lt;booktitle&gt;Coma&lt;/booktitle&gt;<br /> &lt;author&gt;Robin Cook&lt;/author&gt;<br /> &lt;price&gt;99.5&lt;/price&gt;<br /> &lt;/book&gt;<br />&lt;/library&gt;<br />Select the incorrect statement</div>
+
+
+<div class="ablock clearfix ms_text">
+  <div class="prompt c1_text">
+    Choose one answer.  </div>
+
+  <table class="answer">
+          <tr class="r0">
+        <td class="c0 control">
+          <input  id="resp90925_268804" name="resp90925_" checked="checked" type="radio" value="268804" />        </td>
+        <td class="c1 text  c1_text">
+          <label for="resp90925_268804">
+            <span class="anun">a<span class="anumsep">.</span></span> The XML document is not validation because the book element is larger than one                      </label>
+        </td>
+        <td class="c0 feedback">
+                  </td>
+      </tr>
+          <tr class="r1">
+        <td class="c0 control">
+          <input  id="resp90925_268806" name="resp90925_"  type="radio" value="268806" />        </td>
+        <td class="c1 text  c1_text">
+          <label for="resp90925_268806">
+            <span class="anun">b<span class="anumsep">.</span></span> All of the others.                      </label>
+        </td>
+        <td class="c0 feedback">
+                  </td>
+      </tr>
+          <tr class="r0">
+        <td class="c0 control">
+          <input  id="resp90925_268805" name="resp90925_"  type="radio" value="268805" />        </td>
+        <td class="c1 text  c1_text">
+          <label for="resp90925_268805">
+            <span class="anun">c<span class="anumsep">.</span></span> The DTD document is not validation because the #REQUIRED value is used in attribute                      </label>
+        </td>
+        <td class="c0 feedback">
+                  </td>
+      </tr>
+          <tr class="r1">
+        <td class="c0 control">
+          <input  id="resp90925_268803" name="resp90925_"  type="radio" value="268803" />        </td>
+        <td class="c1 text  c1_text">
+          <label for="resp90925_268803">
+            <span class="anun">d<span class="anumsep">.</span></span> The XML document is not validation because the #REQUIRED value is not enclosed with braces                      </label>
+        </td>
+        <td class="c0 feedback">
+                  </td>
+      </tr>
+      </table>
+    </div>
+    <div class="grading">
+          </div>  </div>
+</div>
+<div fix="return false";id="q90881" class="que multichoice clearfix">
+  <div class="info ms_text">
+    <span class="no"><span class="accesshide">Question </span>44</span>
+          <div class="grade">
+        Marks: 1      </div>
+      </div>
+  <div class="content">
+    <div class="qtext c1_text">
+  XML data can be embedded in _______</div>
+
+
+<div class="ablock clearfix ms_text">
+  <div class="prompt c1_text">
+    Choose one answer.  </div>
+
+  <table class="answer">
+          <tr class="r0">
+        <td class="c0 control">
+          <input  id="resp90881_268631" name="resp90881_"  type="radio" value="268631" />        </td>
+        <td class="c1 text  c1_text">
+          <label for="resp90881_268631">
+            <span class="anun">a<span class="anumsep">.</span></span> XHTML                      </label>
+        </td>
+        <td class="c0 feedback">
+                  </td>
+      </tr>
+          <tr class="r1">
+        <td class="c0 control">
+          <input  id="resp90881_268630" name="resp90881_"  type="radio" value="268630" />        </td>
+        <td class="c1 text  c1_text">
+          <label for="resp90881_268630">
+            <span class="anun">b<span class="anumsep">.</span></span> JSP                      </label>
+        </td>
+        <td class="c0 feedback">
+                  </td>
+      </tr>
+          <tr class="r0">
+        <td class="c0 control">
+          <input  id="resp90881_268629" name="resp90881_" checked="checked" type="radio" value="268629" />        </td>
+        <td class="c1 text  c1_text">
+          <label for="resp90881_268629">
+            <span class="anun">c<span class="anumsep">.</span></span> HTML                      </label>
+        </td>
+        <td class="c0 feedback">
+                  </td>
+      </tr>
+          <tr class="r1">
+        <td class="c0 control">
+          <input  id="resp90881_268632" name="resp90881_"  type="radio" value="268632" />        </td>
+        <td class="c1 text  c1_text">
+          <label for="resp90881_268632">
+            <span class="anun">d<span class="anumsep">.</span></span> All of the others                      </label>
+        </td>
+        <td class="c0 feedback">
+                  </td>
+      </tr>
+      </table>
+    </div>
+    <div class="grading">
+          </div>  </div>
+</div>
+<div fix="return false";id="q118346" class="que multichoice clearfix">
+  <div class="info ms_text">
+    <span class="no"><span class="accesshide">Question </span>45</span>
+          <div class="grade">
+        Marks: 1      </div>
+      </div>
+  <div class="content">
+    <div class="qtext c1_text">
+  <span lang="EN">
+<p>Given the XML code fragment</p>
+<p>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;</p>
+<p>&lt;library xmlns=&quot;http://www.fpt.edu.vn&quot;</p>
+<p> xmlns:article=&quot;http://www.article.fpt.edu.vn&quot;</p>
+<p> xmlns:person=&quot;http://www.biolography.com.vn&quot;&gt;</p>
+<p> &lt;book article:id=&quot;B0001&quot; id=&quot;IB8976&quot;&gt;</p>
+<p> &lt;article:title&gt;The Firm&lt;/article:title&gt;</p>
+<p> &lt;person:author&gt;John Grisham&lt;/person:author&gt;</p>
+<p> &lt;article:price&gt;99&lt;/article:price&gt;</p>
+<p> &lt;/book&gt;</p>
+<p>&lt;/library&gt;</p>
+<p>Choose the correct statement</p></span></div>
+
+
+<div class="ablock clearfix ms_text">
+  <div class="prompt c1_text">
+    Choose one answer.  </div>
+
+  <table class="answer">
+          <tr class="r0">
+        <td class="c0 control">
+          <input  id="resp118346_351855" name="resp118346_" checked="checked" type="radio" value="351855" />        </td>
+        <td class="c1 text  c1_text">
+          <label for="resp118346_351855">
+            <span class="anun">a<span class="anumsep">.</span></span> The XML code fragment is not validated because no DTD document is referenced                      </label>
+        </td>
+        <td class="c0 feedback">
+                  </td>
+      </tr>
+          <tr class="r1">
+        <td class="c0 control">
+          <input  id="resp118346_351857" name="resp118346_"  type="radio" value="351857" />        </td>
+        <td class="c1 text  c1_text">
+          <label for="resp118346_351857">
+            <span class="anun">b<span class="anumsep">.</span></span> None of the others                      </label>
+        </td>
+        <td class="c0 feedback">
+                  </td>
+      </tr>
+          <tr class="r0">
+        <td class="c0 control">
+          <input  id="resp118346_351856" name="resp118346_"  type="radio" value="351856" />        </td>
+        <td class="c1 text  c1_text">
+          <label for="resp118346_351856">
+            <span class="anun">c<span class="anumsep">.</span></span> The id is duplicated                      </label>
+        </td>
+        <td class="c0 feedback">
+                  </td>
+      </tr>
+          <tr class="r1">
+        <td class="c0 control">
+          <input  id="resp118346_351854" name="resp118346_"  type="radio" value="351854" />        </td>
+        <td class="c1 text  c1_text">
+          <label for="resp118346_351854">
+            <span class="anun">d<span class="anumsep">.</span></span> The XML code fragment is not well-formed because the prefix xmlns cannot be bound to any namespace                      </label>
+        </td>
+        <td class="c0 feedback">
+                  </td>
+      </tr>
+      </table>
+    </div>
+    <div class="grading">
+          </div>  </div>
+</div>
+<div fix="return false";id="q173473" class="que multichoice clearfix">
+  <div class="info ms_text">
+    <span class="no"><span class="accesshide">Question </span>46</span>
+          <div class="grade">
+        Marks: 1      </div>
+      </div>
+  <div class="content">
+    <div class="qtext c1_text">
+  <span lang="EN">
+<p>What does the following statement do?</p>
+<p>Math.floor( Math.random() * 12 );</p></span></div>
+
+
+<div class="ablock clearfix ms_text">
+  <div class="prompt c1_text">
+    Choose one answer.  </div>
+
+  <table class="answer">
+          <tr class="r0">
+        <td class="c0 control">
+          <input  id="resp173473_511720" name="resp173473_"  type="radio" value="511720" />        </td>
+        <td class="c1 text  c1_text">
+          <label for="resp173473_511720">
+            <span class="anun">a<span class="anumsep">.</span></span> This creates a random number from 1 up to and including 12                      </label>
+        </td>
+        <td class="c0 feedback">
+                  </td>
+      </tr>
+          <tr class="r1">
+        <td class="c0 control">
+          <input  id="resp173473_511722" name="resp173473_" checked="checked" type="radio" value="511722" />        </td>
+        <td class="c1 text  c1_text">
+          <label for="resp173473_511722">
+            <span class="anun">b<span class="anumsep">.</span></span> This creates a random number from 0 up to but not including 12                      </label>
+        </td>
+        <td class="c0 feedback">
+                  </td>
+      </tr>
+          <tr class="r0">
+        <td class="c0 control">
+          <input  id="resp173473_511721" name="resp173473_"  type="radio" value="511721" />        </td>
+        <td class="c1 text  c1_text">
+          <label for="resp173473_511721">
+            <span class="anun">c<span class="anumsep">.</span></span> This creates a random number from 0 up to and including 12                      </label>
+        </td>
+        <td class="c0 feedback">
+                  </td>
+      </tr>
+          <tr class="r1">
+        <td class="c0 control">
+          <input  id="resp173473_511723" name="resp173473_"  type="radio" value="511723" />        </td>
+        <td class="c1 text  c1_text">
+          <label for="resp173473_511723">
+            <span class="anun">d<span class="anumsep">.</span></span> None of the others                      </label>
+        </td>
+        <td class="c0 feedback">
+                  </td>
+      </tr>
+      </table>
+    </div>
+    <div class="grading">
+          </div>  </div>
+</div>
+<div fix="return false";id="q90905" class="que multichoice clearfix">
+  <div class="info ms_text">
+    <span class="no"><span class="accesshide">Question </span>47</span>
+          <div class="grade">
+        Marks: 1      </div>
+      </div>
+  <div class="content">
+    <div class="qtext c1_text">
+  The declaration is used to declare the xml tag library using in JSP as</div>
+
+
+<div class="ablock clearfix ms_text">
+  <div class="prompt c1_text">
+    Choose one answer.  </div>
+
+  <table class="answer">
+          <tr class="r0">
+        <td class="c0 control">
+          <input  id="resp90905_268728" name="resp90905_"  type="radio" value="268728" />        </td>
+        <td class="c1 text  c1_text">
+          <label for="resp90905_268728">
+            <span class="anun">a<span class="anumsep">.</span></span> None of the others                      </label>
+        </td>
+        <td class="c0 feedback">
+                  </td>
+      </tr>
+          <tr class="r1">
+        <td class="c0 control">
+          <input  id="resp90905_268725" name="resp90905_"  type="radio" value="268725" />        </td>
+        <td class="c1 text  c1_text">
+          <label for="resp90905_268725">
+            <span class="anun">b<span class="anumsep">.</span></span> &lt;%@ taglib prefix=“x” uri= “http://java.sun.com/jstl/xml” %&gt;                      </label>
+        </td>
+        <td class="c0 feedback">
+                  </td>
+      </tr>
+          <tr class="r0">
+        <td class="c0 control">
+          <input  id="resp90905_268727" name="resp90905_" checked="checked" type="radio" value="268727" />        </td>
+        <td class="c1 text  c1_text">
+          <label for="resp90905_268727">
+            <span class="anun">c<span class="anumsep">.</span></span> &lt;%@ taglib prefix=“x” uri= “http://java.sun.com/jsp/jstl/xml” %&gt;                      </label>
+        </td>
+        <td class="c0 feedback">
+                  </td>
+      </tr>
+          <tr class="r1">
+        <td class="c0 control">
+          <input  id="resp90905_268726" name="resp90905_"  type="radio" value="268726" />        </td>
+        <td class="c1 text  c1_text">
+          <label for="resp90905_268726">
+            <span class="anun">d<span class="anumsep">.</span></span> &lt;%@ import “http://java.sun.com/jsp/jstl/xml” %&gt;                      </label>
+        </td>
+        <td class="c0 feedback">
+                  </td>
+      </tr>
+      </table>
+    </div>
+    <div class="grading">
+          </div>  </div>
+</div>
+<div fix="return false";id="q88571" class="que multichoice clearfix">
+  <div class="info ms_text">
+    <span class="no"><span class="accesshide">Question </span>48</span>
+          <div class="grade">
+        Marks: 1      </div>
+      </div>
+  <div class="content">
+    <div class="qtext c1_text">
+  Given the XML code fragment<br />&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;<br />&lt;library xmlns:xmlns=&quot;<a href="http://www.fpt.edu.vn">http://www.fpt.edu.vn</a>&quot;<br /> xmlns:article=&quot;<a href="http://www.article.fpt.edu.vn">http://www.article.fpt.edu.vn</a>&quot;<br /> xmlns:person=&quot;<a href="http://www.biolography.com.vn">http://www.biolography.com.vn</a>&quot;&gt;<br /> &lt;book article:id=&quot;B0001&quot; id=&quot;IB8976&quot;&gt;<br /> &lt;article:title&gt;The Firm&lt;/article:title&gt;<br /> &lt;person:author&gt;John Grisham&lt;/person:author&gt;<br /> &lt;article:price&gt;99&lt;/article:price&gt;<br /> &lt;/book&gt;<br />&lt;/library&gt;<br />Choose correct the statement</div>
+
+
+<div class="ablock clearfix ms_text">
+  <div class="prompt c1_text">
+    Choose one answer.  </div>
+
+  <table class="answer">
+          <tr class="r0">
+        <td class="c0 control">
+          <input  id="resp88571_261455" name="resp88571_"  type="radio" value="261455" />        </td>
+        <td class="c1 text  c1_text">
+          <label for="resp88571_261455">
+            <span class="anun">a<span class="anumsep">.</span></span> The XML code fragment is validated                      </label>
+        </td>
+        <td class="c0 feedback">
+                  </td>
+      </tr>
+          <tr class="r1">
+        <td class="c0 control">
+          <input  id="resp88571_261456" name="resp88571_"  type="radio" value="261456" />        </td>
+        <td class="c1 text  c1_text">
+          <label for="resp88571_261456">
+            <span class="anun">b<span class="anumsep">.</span></span> The XML code fragment is not well-formed because the id attribute is duplicated                      </label>
+        </td>
+        <td class="c0 feedback">
+                  </td>
+      </tr>
+          <tr class="r0">
+        <td class="c0 control">
+          <input  id="resp88571_261454" name="resp88571_" checked="checked" type="radio" value="261454" />        </td>
+        <td class="c1 text  c1_text">
+          <label for="resp88571_261454">
+            <span class="anun">c<span class="anumsep">.</span></span> The XML code fragment is not well-formed because the prefix xmlns cannot be bound to any namespace                      </label>
+        </td>
+        <td class="c0 feedback">
+                  </td>
+      </tr>
+          <tr class="r1">
+        <td class="c0 control">
+          <input  id="resp88571_261457" name="resp88571_"  type="radio" value="261457" />        </td>
+        <td class="c1 text  c1_text">
+          <label for="resp88571_261457">
+            <span class="anun">d<span class="anumsep">.</span></span> All of the others                      </label>
+        </td>
+        <td class="c0 feedback">
+                  </td>
+      </tr>
+      </table>
+    </div>
+    <div class="grading">
+          </div>  </div>
+</div>
+<div fix="return false";id="q90912" class="que multichoice clearfix">
+  <div class="info ms_text">
+    <span class="no"><span class="accesshide">Question </span>49</span>
+          <div class="grade">
+        Marks: 1      </div>
+      </div>
+  <div class="content">
+    <div class="qtext c1_text">
+  Which of the following is the proper method to apply the fliph filter to the following H1 element?</div>
+
+
+<div class="ablock clearfix ms_text">
+  <div class="prompt c1_text">
+    Choose one answer.  </div>
+
+  <table class="answer">
+          <tr class="r0">
+        <td class="c0 control">
+          <input  id="resp90912_268753" name="resp90912_"  type="radio" value="268753" />        </td>
+        <td class="c1 text  c1_text">
+          <label for="resp90912_268753">
+            <span class="anun">a<span class="anumsep">.</span></span> test.filters.style = fliph;                      </label>
+        </td>
+        <td class="c0 feedback">
+                  </td>
+      </tr>
+          <tr class="r1">
+        <td class="c0 control">
+          <input  id="resp90912_268755" name="resp90912_"  type="radio" value="268755" />        </td>
+        <td class="c1 text  c1_text">
+          <label for="resp90912_268755">
+            <span class="anun">b<span class="anumsep">.</span></span> test.filters( "fliph" );                      </label>
+        </td>
+        <td class="c0 feedback">
+                  </td>
+      </tr>
+          <tr class="r0">
+        <td class="c0 control">
+          <input  id="resp90912_268754" name="resp90912_"  type="radio" value="268754" />        </td>
+        <td class="c1 text  c1_text">
+          <label for="resp90912_268754">
+            <span class="anun">c<span class="anumsep">.</span></span> test.filters( fliph );                      </label>
+        </td>
+        <td class="c0 feedback">
+                  </td>
+      </tr>
+          <tr class="r1">
+        <td class="c0 control">
+          <input  id="resp90912_268752" name="resp90912_" checked="checked" type="radio" value="268752" />        </td>
+        <td class="c1 text  c1_text">
+          <label for="resp90912_268752">
+            <span class="anun">d<span class="anumsep">.</span></span> the filter cannot be applied to this element                      </label>
+        </td>
+        <td class="c0 feedback">
+                  </td>
+      </tr>
+      </table>
+    </div>
+    <div class="grading">
+          </div>  </div>
+</div>
+<div fix="return false";id="q152910" class="que multichoice clearfix">
+  <div class="info ms_text">
+    <span class="no"><span class="accesshide">Question </span>50</span>
+          <div class="grade">
+        Marks: 1      </div>
+      </div>
+  <div class="content">
+    <div class="qtext c1_text">
+  <p>Given xml fragment: </p>
+<p>&lt;ns1:employees xmlns:ns1=&quot;urn:mycompany&quot;&gt; </p>
+<p>&lt;ns1:manager&gt; </p>
+<p>&lt;ns2:name xmlns:ns2=&quot;urn:partnercompany&quot;&gt; </p>
+<p>&lt;fname&gt;John&lt;/fname&gt; </p>
+<p>&lt;lname&gt;Smith&lt;/lname&gt; </p>
+<p>&lt;/ns2:name&gt; </p>
+<p>&lt;/ns1:manager&gt; </p>
+<p>&lt;/ns1:employees&gt; </p>Choose the correct answer</div>
+
+
+<div class="ablock clearfix ms_text">
+  <div class="prompt c1_text">
+    Choose one answer.  </div>
+
+  <table class="answer">
+          <tr class="r0">
+        <td class="c0 control">
+          <input  id="resp152910_454316" name="resp152910_"  type="radio" value="454316" />        </td>
+        <td class="c1 text  c1_text">
+          <label for="resp152910_454316">
+            <span class="anun">a<span class="anumsep">.</span></span> The element fname and lname are bound to default namespace                      </label>
+        </td>
+        <td class="c0 feedback">
+                  </td>
+      </tr>
+          <tr class="r1">
+        <td class="c0 control">
+          <input  id="resp152910_454315" name="resp152910_"  type="radio" value="454315" />        </td>
+        <td class="c1 text  c1_text">
+          <label for="resp152910_454315">
+            <span class="anun">b<span class="anumsep">.</span></span> The namespace identified by the prefix ns1 can be bound to the element employees and its descendants                      </label>
+        </td>
+        <td class="c0 feedback">
+                  </td>
+      </tr>
+          <tr class="r0">
+        <td class="c0 control">
+          <input  id="resp152910_454314" name="resp152910_" checked="checked" type="radio" value="454314" />        </td>
+        <td class="c1 text  c1_text">
+          <label for="resp152910_454314">
+            <span class="anun">c<span class="anumsep">.</span></span> The namespace identified by the prefix ns2 can be bound to the element name and its descendants                      </label>
+        </td>
+        <td class="c0 feedback">
+                  </td>
+      </tr>
+          <tr class="r1">
+        <td class="c0 control">
+          <input  id="resp152910_454317" name="resp152910_"  type="radio" value="454317" />        </td>
+        <td class="c1 text  c1_text">
+          <label for="resp152910_454317">
+            <span class="anun">d<span class="anumsep">.</span></span> All of the others                      </label>
+        </td>
+        <td class="c0 feedback">
+                  </td>
+      </tr>
+      </table>
+    </div>
+    <div class="grading">
+          </div>  </div>
+</div>
+<div class="submitbtns mdl-align">
+<input type="submit" name="saveattempt" value="Save without submitting" />
+<input type="submit" name="finishattempt" value="Submit all and finish" onclick="return confirm('You are about to close this attempt. Once you close the attempt you will no longer be able to change your answers.')" />
+</div><div class="paging pagingbar"><span class="title">Page:</span>&nbsp;&nbsp;<a href="javascript:navigate(0);" title="Previous">(Previous)</a>&nbsp;&nbsp;<a href="javascript:navigate(0);">1</a>&nbsp;&nbsp;<span class="thispage">2</span>&nbsp;</div></div><input type="hidden" name="timeup" id="timeup" value="0" /><input type="hidden" name="questionids" value="137156,90920,137172,173469,173468,173472,173470,90908,90915,173466,137160,90926,90925,90881,118346,173473,90905,88571,90912,152910" />
+</form>
+
+<script type="text/javascript">
+//<![CDATA[
+var timesup = "Time is up!";
+var quizclose = 35444; // in seconds
+var quizTimerValue = 2055; // in seconds
+parseInt(quizTimerValue);
+
+// @EC PF : client time when page was opened
+var ec_page_start = new Date().getTime();
+// @EC PF : client time when quiz should end
+var ec_quiz_finish = ec_page_start + 2055000;
+
+//]]>
+</script>
+<div id="timer">
+<!--EDIT BELOW CODE TO YOUR OWN MENU-->
+<table class="generalbox" border="0" cellpadding="0" cellspacing="0" style="width:150px;">
+<tr>
+    <td class="generalboxcontent" bgcolor="#ffffff" width="100%">
+    <table class="generaltable" border="0" width="150" cellspacing="0" cellpadding="0">
+   <tr>
+        <th class="generaltableheader" width="100%" scope="col">
+		
+		Nguyễn Thanh Sang        
+        </th>
+    </tr>
+    <tr>
+        <th class="generaltableheader" width="100%" scope="col">sangnt60366</th>
+    </tr>
+    
+    <tr>
+        <td id="QuizTimer" class="generaltablecell" align="center" width="100%">
+        <form id="clock"><div><input onfocus="blur()" type="text" id="time"
+        style="background-color: transparent; border: none; width: 70%; font-family: sans-serif; font-size: 14pt; font-weight: bold; text-align: center;" />
+        </div>
+        </form>
+        </td>
+    </tr>
+    </table>
+    </td>
+</tr>
+</table>
+<!--END OF EDIT-->
+</div>
+<script type="text/javascript">
+//<![CDATA[
+
+var timerbox = document.getElementById('timer');
+var theTimer = document.getElementById('QuizTimer');
+var theTop = 100;
+var old = theTop;
+
+movecounter(timerbox);
+
+document.onload = countdown_clock(theTimer);
+//]]>
+</script>
+</div><div id="footer"><p class="helplink"></p><div class="logininfo">You are logged in as <a  href="http://exam.fus.edu.vn/user/view.php?id=479&amp;course=88">Sang Nguyễn Thanh</a>  (<a  href="http://exam.fus.edu.vn/login/logout.php?sesskey=xSL7hDKquS">Logout</a>)</div><div class="homelink"><a  href="http://exam.fus.edu.vn/course/view.php?id=88">XML</a>&nbsp;<a href="http://www.themza.com/moodle/student-experience.html" target="_blank" title="Student Experience free Moodle theme">Moodle Theme</a> <a href="http://www.ntchosting.com" target="_blank" title="cheap hosting">web hosting</a></div></div>
+</div>
+</body>
+</html>

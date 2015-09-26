@@ -1,0 +1,1 @@
+xcodebuild: error: The flag -scheme is required when specifying -derivedDataPath.
